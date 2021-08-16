@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.header {
+    background-color: #FAF0E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Parisienne', cursive;
+    font-size: 1.5rem;
+        &__myName{
+            margin-left : 2rem
+        }
+        &__menu {
+            margin-right:2rem
+
+        }
+}
+
+@media screen and (max-width:750px) {
+    .header {
+            font-size: 1rem;
+    }
+
+}
