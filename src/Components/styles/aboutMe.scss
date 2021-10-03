@@ -2,15 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 .aboutMe {
-    
-    font-family: 'Tajawal', sans-serif;
-    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+        &__avatar{
+            width: 8rem;
+            height: 8rem;
+            background-image: url("../../images/avatar-gratuit\ \(3\).png");
+            background-position: center;
+            background-size: 8rem;
+            border-radius: 100%;
+            margin-bottom: 1.5rem;
+        }
         &__title{
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin: 0px;
             font-family: 'Montserrat', sans-serif;
             opacity: 1; 
+            letter-spacing: 0.4rem;
 
             
+        }
+        &__subTitle{
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+        }
+        
+        &__uploadCvLink{
+            text-decoration: none;
+            font-weight: bolder;
+            color:#47766A;
+            border-radius: 2rem;
+            border:rgba(240, 128, 128, 0.5 ) solid 3px;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            margin: 1rem;
+            background: linear-gradient(#ffffff, rgba(240, 128, 128, 0.5));
+            box-shadow: 0px 3px 5px #3838382e ;
+            &:hover{
+                box-shadow: 0px 3px 5px gray;
+                transform:scale(1.02)
+            }
+
         }
 }

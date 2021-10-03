@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.stackTechnique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0rem 2rem 0rem;
+
+    }
+    &__icon{
+        font-size: 3rem;
+        margin: 0px;
+        color:#47766A;
+    }
+    &__fieldset{
+        border-color:rgba(240, 128, 128, 0.5);
+        border-radius: 0.2rem;
+
+    }
+    &__legend{
+        color:#B88995;
+        font-family: 'Montserrat', sans-serif;
+        margin:0px;
+        letter-spacing: 0.3rem;
+    }
+}

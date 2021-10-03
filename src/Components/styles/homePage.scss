@@ -1,0 +1,66 @@
+body {
+  width: 100%;
+}
+.homePage{
+  width: 100%;
+    &__loaderBox{
+        position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    left: 0;
+    top: 0;
+    background-color: grey;
+    opacity: 0.8;
+
+    animation: loaderBox 1s linear 1;
+    animation-fill-mode: both;
+    
+    
+    @keyframes loaderBox{
+        0%{
+            opacity: 1;
+        }
+
+        90%{
+            opacity: 0.8;
+            z-index: 999;
+        }
+
+        100%{
+            opacity: 0;
+            z-index: -10;
+        }
+    }
+    }
+    &__lds-circle {
+        display: inline-block;
+        transform: translateZ(1px);
+      }
+      .homePage__lds-circle > div {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        background: #cef;
+        animation: homePage__lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      @keyframes homePage__lds-circle {
+        0%, 100% {
+          animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+        }
+        0% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(1800deg);
+          animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+        }
+        100% {
+          transform: rotateY(3600deg);
+        }
+      }
+}

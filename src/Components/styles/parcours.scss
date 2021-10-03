@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.parcours{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #B3BFBD;
+    min-height: 15rem;
+    &__title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        background-color: white;
+        margin:0rem 0rem 1rem 0rem;
+        padding:1rem 0rem 0rem 0rem;
+        width: 100%;
+        text-align: center;
+        color: #B3BFBD;
+        letter-spacing: 0.8rem;
+        
+    }
+    &__pointDiv{
+        height: 3rem;
+        width: 90%;
+        background-color:white;
+        margin: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__icon{
+        background-color:#F08080;
+        color:white;
+        font-size: 0.8rem;
+        border-radius: 100%;
+        padding:0.3rem;
+        margin-left:-0.8rem;
+
+    }
+}
