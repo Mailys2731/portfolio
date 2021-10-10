@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.banner {
+    height: 25rem;
+    width: 100%;
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+    box-shadow: inset 0px 0px 12px 4px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0px 0px 12px 4px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset 0px 0px 12px 4px rgba(0, 0, 0, 0.8);
+
+    background: url("../../images/fleur\ jaune.jpg") no-repeat fixed;
+    background-color: #0e1414;
+    background-size: 60%;  
+
+        &__title{
+            font-size: 2.5rem;
+            font-weight: lighter;
+            letter-spacing: 0.4rem;
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+        &__subTitle{
+            font-size: 1.5rem;
+            font-weight: lighter;
+            letter-spacing: 0.2rem;
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }   
+}
+
+@media screen and (max-width: 767px) {
+    .banner{
+        justify-content: flex-end;
+        background: url("../../images/fleur\ jaune\ mobile.jpg") no-repeat fixed;
+        background-size: 100%;  
+        padding-top: 2rem;
+
+        &__title{
+            font-size: 1.4rem;
+        }
+
+        &__subTitle{
+            font-size: 1.2rem;
+            margin: 0.2rem 0 4rem 0;
+        }
+    
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+   .banner{
+        height: 18rem;
+        background-size: 70%;
+
+        &__title{
+            margin: 0rem;
+            align-self: flex-end;
+            padding-right: 3rem;
+
+        }
+
+        &__subTitle{
+            align-self: flex-end;
+            padding-right: 4rem;
+
+        }
+   }
+}
+
+.reactIcon{
+    border-radius: 100px;
+    margin-left: 0px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+

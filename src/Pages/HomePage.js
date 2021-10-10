@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
 import Header from '../Components/Header';
-import AboutMe from '../Components/AboutMe';
+import Banner from '../Components/Banner';
 import StackTechnique from '../Components/StackTechnique';
 import Parcours from '../Components/Parcours';
 import Contact from '../Components/Contact';
 import Footer from '../Components/Footer';
+import Linkedin from '../Components/linkedin';
 import '../Components/styles/homePage.scss';
 
 class HomePage extends Component {
-
+/* <div className="homePage__loaderBox">
+                    <div className="homePage__lds-circle"><div></div>
+                    </div>
+                </div>*/
     render() {
         return (
             <div className="homePage">
-                <div className="homePage__loaderBox">
-                <div class="homePage__lds-circle"><div></div></div>
-                </div>
-                <Header/>
-                <AboutMe/>
-                <Parcours/>
-                <StackTechnique/>
-                <Contact/>
-                <Footer/>
+                <Header />
+                <Banner />
+                <Contact />
             </div>
         )
     }

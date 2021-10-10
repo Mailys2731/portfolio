@@ -5,7 +5,7 @@ class Footer extends Component {
 
     render(){
         return(
-            <div className="footer">Footer</div>
+            <div className="footer"><a href='https://.pngtree.com/so/zone'>zone png de .pngtree.com/</a></div>
         )
     }
 }

@@ -1,23 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 .header {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-family: 'Parisienne', cursive;
-    border-bottom: 2px solid #B88995;
-    color:#47766A;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    max-height: 3rem;
 
-        &__myName{
-            font-size: 2rem;
-        }
+    font-family: 'Oswald', sans-serif;
 
-        &__mouseIcon{
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+    background-color: white;
+    box-shadow: 0px 15px 10px -15px #111;    
+    
+    &__listBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem;
+
+        & li {
+            padding: 0 1rem 0 1rem;
+            list-style: none;
+
+            & a {
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: blueviolet;
+                }
+            }
         }
+    }
+    &__accueil{
+        font-weight: bolder;
+        margin: 0 2rem 0 1rem;
+    }
+    &__listOther{
+        display: flex;
+        flex-direction: row;
+        margin: 0 1rem 0 0;
+    }
+    &__btnMenuBars{
+        display: none;
+    }
+    &__listLi{
+        display: flex;
+        flex-direction: row;
+    }
+    
 }
+
+@media screen and (max-width: 750px) {
+    .header{
+       
+        &__listLi{
+            display: none;
+        }
+
+        &__btnMenu{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width:100% ;           
+
+            &:hover{
+                .header__listLi{
+                    display: block;
+                    padding-top: 1rem;
+                    background-color: rgba(105,105,105,0.8);
+                    margin-top: 0.8rem;
+                    margin-right: 0px;
+                    & a {color: white;}
+                }
+               
+            }
+        }
+
+        &__btnMenuBars{
+            align-self: flex-end;
+            border: none;
+            background-color: white;
+            font-size: 1.2rem;
+            margin-right: 1.5rem;
+            align-self: flex-end;
+            display: block;
+            align-self: flex-end;
+            }
+        }
+        &__listOther{
+            flex-direction: column;
+            margin-right: 0px;
+            padding-top:0.8rem;
+        }
+      
+       
+        
+
+
+    }

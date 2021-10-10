@@ -1,31 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 .stackTechnique{
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    &__box{
+    color: white;
+    background-color: black;
+    &__skills{
+        padding: 0 3rem 0 3rem;
+    }
+    &__skillsBox{
         display: flex;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
-        margin: 2rem 0rem 2rem 0rem;
+        background-color: #f2fffc;
+        width: 50%;
+        margin: 3rem;
+        color: #262220;
+        border-radius:1rem;
+        border: black solid 8px;
+        
+        padding:0 1rem 1rem 1rem;
+        
+        
+        & h4 {
+            font-size: 2rem;
+        }
+        & p{
+            padding:0.5rem;
+            border-radius:1rem;
+            color:white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;        }
 
     }
-    &__icon{
-        font-size: 3rem;
-        margin: 0px;
-        color:#47766A;
-    }
-    &__fieldset{
-        border-color:rgba(240, 128, 128, 0.5);
-        border-radius: 0.2rem;
+    &__hardSkillsBox {
+        & p {        
+            background-color: #73763d
+            ;
+
+        }
 
     }
-    &__legend{
-        color:#B88995;
-        font-family: 'Montserrat', sans-serif;
-        margin:0px;
-        letter-spacing: 0.3rem;
+    &__softSkillsBox p{
+        background-color:#eee3D3;
+        color: black;
+
     }
+    &__skills{
+        display: flex;
+        flex-direction: row;
+    }
+    &__stackBox{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        margin-right: 5rem;
+
+    }
+
+    &__stackList{
+        & h4{
+            margin: 0.5rem 0 0.5rem 0;
+        }
+        & p{
+            font-size: 0.8rem;
+            margin: 0.2rem;
+        }
+    }
+
+    &__stackBorderLeft{
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding-left: 1rem;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+    }
+
+    
+   
+ 
 }

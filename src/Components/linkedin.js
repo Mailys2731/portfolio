@@ -1,24 +1,13 @@
 import React, { useEffect } from 'react';
-import './styles/contact.scss';
 
 export default function Linkedin() {
-    useEffect(() => {
-        const script = document.createElement('script');
-
-        script.src = 'https://platform.linkedin.com/badges/js/profile.js';
-        script.async = true;
-        script.defer = true;
-
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
-
+   
     return (
         <div>
-
+<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="mailys-condamy" data-version="v1">
+    <a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/mailys-condamy?trk=profile-badge"></a>
+    </div>
+                            
         </div>
     );
 }
